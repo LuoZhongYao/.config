@@ -9,3 +9,22 @@ indent = { tab-width = 8, unit = "\t" }
 [[language]]
 name = "cpp"
 indent = { tab-width = 8, unit = "\t" }
+
+[[language]]
+name = "rust"
+formatter = { command = "rustfmt" }
+
+[[language]]
+name = "gas"
+indent = { tab-width = 8, unit = "\t" }
+comment-token = "//"
+file-types = ["S", "s"]
+
+[[language]]
+name = "cmake"
+auto-format = false
+language-servers = [{ name = "neocmakelsp" }]
+
+[language-server.neocmakelsp]
+command = "neocmakelsp"
+args = ["--stdio"]
