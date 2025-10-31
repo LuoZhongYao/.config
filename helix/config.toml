@@ -1,15 +1,23 @@
-theme="solarized"
+theme="solarized_light"
 
 [editor]
 rulers = [101]
 idle-timeout = 0
 line-number = "relative"
+completion-replace = true
 
 [editor.lsp]
 display-inlay-hints = true
 
 [editor.soft-wrap]
 enable = true
+
+[editor.indent-guides]
+render = true
+
+[editor.inline-diagnostics]
+cursor-line = "warning" 
+other-lines = "warning"
 
 [keys.normal.space]
 "%" = "file_picker_in_current_buffer_directory"
